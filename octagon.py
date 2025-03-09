@@ -19,18 +19,18 @@ class Octagon:
         return radius
     
     def s_op(self):
-        S = pi * (self.rad_op ^ 2)
+        S = pi * int(self.rad_op()) ** 2
         return S
         
     def s_vp(self):
-        S = pi * (self.rad_vp ^ 2)
+        S = pi * int(self.rad_vp()) ** 2
         return S
     
     def per(self):# Периметр 8-миугольника
         print(f'Периметр 8-миугольника равен: {self.storona * 8}\n')
 
     def S(self):# Площодь 8-миугольника
-        S = 2 * (self.storona ^ 2) * (sqrt(2) + 1)
+        S = 2 * (self.storona ** 2) * (sqrt(2) + 1)
         print(f'Площадь 8-миугольника равна: {S}\n')
     
     def peaks(self) -> list:# Находим вершины
